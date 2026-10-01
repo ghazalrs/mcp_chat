@@ -74,8 +74,12 @@ The id of the document you need to reformat is:
 {doc_id}
 </document_id>
 
-Add in headers, bullet points, tables, etc as necessary. Feel free to add in structure.
-Use the 'edit_document' tool to edit the document. After the document has been reformatted...
+Use the 'read_doc_contents' tool to read the document.
+Add headers, bullet points, tables, and other Markdown structure as appropriate.
+Preserve the document's meaning and do not invent additional content.
+Use the 'edit_document' tool to save the reformatted document.
+After the document has been reformatted, return the complete updated Markdown
+content only, without a description of the changes.
 """
     return [base.UserMessage(prompt)]
 
